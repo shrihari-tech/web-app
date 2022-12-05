@@ -1,0 +1,6 @@
+[
+    {"id":1, "name":"Kavin", "car":"i20", "startPoint":"Velandipalayam", "endPoint":"Company", "seatsAvailable":4},
+    {"id":2, "name":"Akash", "car":"shift","startPoint":"Ganapathy", "endPoint":"Company", "seatsAvailable":4},
+    {"id":3, "name":"Saravanan", "car":"innova","startPoint":"Metupalayam", "endPoint":"Company", "seatsAvailable":7},
+    {"id":4, "name":"Kishore", "car":"xylo","startPoint":"Avinasi", "endPoint":"Company", "seatsAvailable":8}
+]

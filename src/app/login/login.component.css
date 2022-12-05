@@ -1,0 +1,13 @@
+.center {
+    margin: 125px 100px 75px 400px; ;
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+  }
+  .login{
+    margin: 5px 10px 5px 160px; 
+    width: 10%;
+    height: 10%;
+    padding: 10px;
+    align-items: right;
+  }

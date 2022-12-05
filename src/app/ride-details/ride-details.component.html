@@ -1,0 +1,40 @@
+<div class="card-header bg-info text-white text-center"><h3>Ride Details</h3></div>
+<div class="card-body border border-primary">
+
+<div class="row text-center">
+    <table class="table table-bordered table-sm">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Car</th>
+            <th scope="col">Seats Left</th>
+            <th scope="col">Pick-up Point</th>
+            <th scope="col">Destination</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>{{details.id}}</td>
+            <td>{{details.name}}</td>
+            <td>{{details.car}}</td>
+
+            <td *ngIf="!booked">{{details.seatsAvailable}}</td>
+            <td *ngIf="booked">{{details.seatsAvailable-1}}</td>
+            
+            <td>{{details.startPoint}}</td>
+            <td>{{details.endPoint}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4 *ngIf="booked">Booking Done!! Your Booking Id is {{details.id}}</h4>
+    <div class="text-center">
+        <small *ngIf="showError" class="text-danger">'Cannot book your ride!'</small>
+    </div>
+    <div class="text-center">
+        <button *ngIf="!booked" (click)="bookRide()" type="submit" class="btn btn-primary w-25">Book</button>
+        <button *ngIf="booked" (click)="booked = !booked" type="submit" class="btn btn-danger w-25">Cancel Ride</button>
+    </div>
+</div>
+</div>
+

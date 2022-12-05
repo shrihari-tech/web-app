@@ -1,0 +1,10 @@
+th {
+    background-color: #1268f149;
+    color: white;
+} 
+.center {
+    margin: 15px 100px 75px 175px; 
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+  }
